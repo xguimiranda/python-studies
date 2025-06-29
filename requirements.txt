@@ -1,0 +1,2 @@
+# Adicione aqui as dependências do seu projeto, por exemplo:
+# requests==2.31.0
