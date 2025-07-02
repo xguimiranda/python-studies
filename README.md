@@ -1,6 +1,6 @@
 # 🐍 Python 3: From Beginner to Advanced 🚀
 
-Welcome! This repository contains my study notes, exercises, and projects from the [Python 3 Course by Luiz Otávio Miranda](https://www.udemy.com/course/python-3-do-zero-ao-avancado/) on Udemy.
+Welcome! This repository contains my study notes, exercises, and projects from the [Python 3 Course by Luiz Otávio Miranda](https://www.udemy.com/course/python-3-do-zero-ao-avancado/  ) on Udemy.
 Here you'll find everything from the basics to advanced Python concepts, with hands-on practice and real-world applications!
 
 ---
@@ -47,7 +47,7 @@ This course is designed to take you from zero to advanced in Python, covering:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/python-luiz-otavio-miranda.git
+   git clone https://github.com/xguimitanda/python-studies.git
    ```
 2. Navigate to each folder and follow along with the notes or try out the exercises yourself.
 3. 🚩 Start at `01-basics` if you’re new to Python!
@@ -60,13 +60,6 @@ This course is designed to take you from zero to advanced in Python, covering:
 - 🎯 Practice exercises for each topic
 - 📁 Real-world projects to solidify learning
 - 💡 Helpful tips and tricks from the course
-
----
-
-## 📢 Credits
-
-- Instructor: [Luiz Otávio Miranda](https://www.udemy.com/user/luiz-otavio-miranda/)
-- Course: [Python 3 do Zero ao Avançado](https://www.udemy.com/course/python-3-do-zero-ao-avancado/)
 
 ---
 
