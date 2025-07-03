@@ -1,50 +1,53 @@
-from tracemalloc import stop
-
-
 def calculadora():
-
-
     while True:
         try:
-            print("=== CALCULADORA SIMPLES ===")
+            print("\n=== CALCULADORA SIMPLES ===")
             print("1. Adição (+)")
             print("2. Subtração (-)")
             print("3. Multiplicação (*)")
             print("4. Divisão (/) \n")
             escolha = int(input("Escolha uma operação (1-4): "))
 
+            if escolha not in [1, 2, 3, 4]:
+                print("Opção inválida! Escolha entre 1 e 4.")
+                continue
+
+            numero1 = float(input("Digite o primeiro numero: "))
+            numero2 = float(input("Digite o segundo numero: "))
+
             if escolha == 1:
-                numero1 = float(input("Digite o primeiro numero: "))
-                numero2 = float(input("Digite o segundo valor: "))
-                print(f"Resultado: {numero1} + {numero2} = {numero1+numero2}")
+                resultado = numero1 + numero2
+                print(f"Resultado: {numero1} + {numero2} = {resultado}")
 
-            if escolha == 2:
-                numero1 = float(input("Digite o primeiro numero: "))
-                numero2 = float(input("Digite o segundo valor: "))
-                print(f"Resultado: {numero1} - {numero2} = {numero1-numero2}")
+            elif escolha == 2:
+                resultado = numero1 - numero2
+                print(f"Resultado: {numero1} - {numero2} = {resultado}")
 
-            if escolha == 3:
-                numero1 = float(input("Digite o primeiro numero: "))
-                numero2 = float(input("Digite o segundo valor: "))
-                print(f"Resultado: {numero1} * {numero2} = {numero1*numero2}")
+            elif escolha == 3:
+                resultado = numero1 * numero2
+                print(f"Resultado: {numero1} * {numero2} = {resultado}")
 
-            if escolha == 4:
-                numero1 = int(input("Digite o primeiro numero: "))
-                numero2 = int(input("Digite o segundo valor: "))
-                if(numero2 == 0):
-                    print("Error: Divisão com 0")
-                    break
+            elif escolha == 4:
+                if numero2 == 0:
+                    print("Error: Divisão por zero não é permitida!")
+                    continue
                 else:
-                    print(f"Resultado: {numero1} / {numero2} = {numero1/numero2}")
+                    resultado = numero1 / numero2
+                    print(f"Resultado: {numero1} / {numero2} = {resultado}")
 
         except ValueError:
-            print("Digite um numero valido!")
-            break
+            print("Por favor, digite apenas números válidos!")
+            continue
 
-    resposta = str(input("Deseja fazer outra operação? (s/n): "))
-    if resposta == 'n':
-        print("Obrigado por usar a calculadora!")
-        stop()
+        while True:
+            resposta = input("\nDeseja fazer outra operação? (s/n): ").lower().strip()
+            if resposta in ['s', 'sim']:
+                break
+            elif resposta in ['n', 'nao', 'não']:
+                print("Obrigado por usar a calculadora!")
+                return
+            else:
+                print("Por favor, digite 's' para sim ou 'n' para não.")
 
 if __name__ == "__main__":
     calculadora()
