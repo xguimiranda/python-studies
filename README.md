@@ -24,25 +24,6 @@ This course is designed to take you from zero to advanced in Python, covering:
 
 ---
 
-## 🗂️ Repository Structure
-
-```
-📁 01-basics/
-📁 02-flow-control/
-📁 03-functions/
-📁 04-collections/
-📁 05-strings/
-📁 06-files/
-📁 07-exceptions/
-📁 08-oop/
-📁 09-modules/
-📁 10-advanced/
-📁 11-projects/
-📁 12-exercises/
-```
-
----
-
 ## ✍️ How to Use
 
 1. Clone the repository:
