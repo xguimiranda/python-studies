@@ -9,3 +9,8 @@ lista2 = lista.copy()
 indices = range(len(lista2))
 for indice in indices:
     print(indice, lista[indice])
+
+lista3 = lista.copy()
+lista_enumerada = enumerate(lista3)
+for itens in lista_enumerada:
+    print(itens)
