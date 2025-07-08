@@ -12,5 +12,9 @@ for indice in indices:
 
 lista3 = lista.copy()
 lista_enumerada = enumerate(lista3)
-for itens in lista_enumerada:
+
+for itens in lista_enumerada: #pode usar apenas uma vez
     print(itens)
+
+for indice, nome in enumerate(lista3): # reutilizavel e mais organizado
+    print(indice, nome)
