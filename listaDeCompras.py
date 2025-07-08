@@ -22,3 +22,23 @@ while True:
         else:
             lista.pop(indice)
             os.system('cls')
+        except (ValueError):
+            print("Digite um numero valido!")
+        except IndexError:
+            print("Numero não existe na lista")
+        except Exception:
+            print("Error Desconhecido")
+
+    if selecao == 'i':
+        os.system('cls')
+        item = input("Produto: ")
+        lista.append(item)
+
+    if selecao == 'l':
+        os.system('cls')
+        for indice, nome in enumerate(lista):
+            print(indice, nome)
+
+    if selecao == 's':
+        print("Obrigado, volte sempre!")
+        break
