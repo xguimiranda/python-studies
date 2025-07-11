@@ -1,13 +1,24 @@
 # 🐍 Python Studies🚀
 
-Welcome! This repository contains my study notes, exercises, and projects from the [Python 3 Course by Luiz Otávio Miranda](https://www.udemy.com/course/python-3-do-zero-ao-avancado/  ) on Udemy.
-Here you'll find everything from the basics to advanced Python concepts, with hands-on practice and real-world applications!
+Welcome! This repository is dedicated to my journey learning Python from multiple courses, resources, and real-world practice projects.  
+Here you'll find notes, exercises, and projects covering Python fundamentals all the way to advanced topics, as I explore different learning paths and materials.
 
 ---
 
-## 📚 Course Overview
+## 📚 Repository Purpose
 
-This course is designed to take you from zero to advanced in Python, covering:
+This repo serves as a comprehensive collection of:
+
+- Study notes from various Python courses and tutorials
+- Practice exercises to reinforce learning
+- Personal projects and real-world applications
+- References and tips I find useful along the way
+
+---
+
+## 🗂️ Topics Covered
+
+You can expect to find content on:
 
 - ✅ Python Fundamentals (syntax, variables, data types)
 - 🔄 Control Flow (if, for, while)
@@ -22,7 +33,10 @@ This course is designed to take you from zero to advanced in Python, covering:
 - 🛠️ Real-World Projects
 - 🏋️‍♂️ Practice Exercises
 
+> As I progress, more topics and new files will be added!
+
 ---
+
 
 ## ✍️ How to Use
 
