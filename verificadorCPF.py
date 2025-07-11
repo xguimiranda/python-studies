@@ -1,5 +1,5 @@
-cpf = '74682489070'
-nove_digitos = cpf[:9]
+cpf_envidado = '74682489070'
+nove_digitos = cpf_envidado[:9]
 contador_regressivo_1 = 10
 
 resultado_digito_1 = 0
@@ -18,3 +18,10 @@ for digito in nove_digitos:
 
 digito_2 = ((resultado_digito_2 * 10) % 11) 
 digito_2 = digito_2 if digito_2 <= 9 else 0
+
+calculated_cpf = f'{nove_digitos}{digito_1}{digito_2}'
+
+if cpf_envidado == calculated_cpf:
+    print(f"{cpf_envidado} é valido!")
+else:
+    print("Cpf invalido!")
