@@ -61,7 +61,7 @@ You can expect to find content on:
 ## 🤝 Contributions
 
 Feel free to fork this repository and contribute with improvements, fixes, or your own solutions!
-If you find it helpful, star ⭐ and share!
+If you find it helpful, star ⭐ and share! 🥳
 
 ---
 
