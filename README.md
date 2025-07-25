@@ -19,7 +19,7 @@ This course is designed to take you from zero to advanced in Python, covering:
 - 🧑‍💻 Object-Oriented Programming (OOP)
 - 🗃️ Modules & Packages
 - 🧠 Intermediate & Advanced Topics (decorators, generators, comprehensions)
-- 🛠️ Real-World Projects
+- 🛠️ Real-World Projects 
 - 🏋️‍♂️ Practice Exercises
 
 > As I progress, more topics and new files will be added!
