@@ -22,7 +22,7 @@ This course is designed to take you from zero to advanced in Python, covering:
 - 🛠️ Real-World Projects 
 - 🏋️‍♂️ Practice Exercises
 
-> As I progress, more topics and new files will be added!
+> As I progress, more topics and new files will be added! 
 
 ---
 
