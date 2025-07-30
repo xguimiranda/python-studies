@@ -7,6 +7,10 @@ duplicar = multiplicar(2)
 triplicar = multiplicar(3)
 quadriplicar = multiplicar(4)
 
-print(duplicar(2))
-print(triplicar(4))
-print(quadriplicar(6))
+while True:
+    print("\nEscolha o tipo de multiplicação:")
+    print("1 - Duplicar")
+    print("2 - Triplicar")
+    print("3 - Quadriplicar")
+    print("0 - Sair")
+    
