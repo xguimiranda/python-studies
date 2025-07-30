@@ -11,3 +11,11 @@ def ParImpar(numero):
         return f'{numero} é par'
     return f'{numero} é impar'
 
+print("***TESTE***")
+numeros = input("Digite numeros para ser multiplicados: ")
+print(multiplicacao(numeros))
+
+
+numero = input("Digite um numero para ver se é par ou impar: ")
+ParImpar(numero)
+
