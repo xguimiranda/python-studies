@@ -12,10 +12,10 @@ def ParImpar(numero):
     return f'{numero} é impar'
 
 print("***TESTE***")
-numeros = input("Digite numeros para ser multiplicados: ")
-print(multiplicacao(numeros))
+numeros = input("Digite números separados por espaço para serem multiplicados: ")
+numeros_lista = [int(n) for n in numeros.split()]
+print("Resultado da multiplicação: ", multiplicacao(numeros_lista))
 
-
-numero = input("Digite um numero para ver se é par ou impar: ")
-ParImpar(numero)
+numero = int(input("Digite um número para ver se é par ou ímpar: "))
+print(ParImpar(numero))
 
