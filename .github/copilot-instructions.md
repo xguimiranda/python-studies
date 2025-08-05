@@ -111,38 +111,22 @@ e por que foi feito (não como foi feito).
 Closes #issue-number (se aplicável)
 ```
 
-### Tipos
+### Types
 
-- **feat**: nova funcionalidade ou exercício
-- **fix**: correção de bug ou erro
-- **docs**: documentação (README, comentários, notas de estudo)
-- **style**: formatação, organização de código
-- **refactor**: refatoração sem mudar funcionalidade
-- **test**: adição ou correção de testes
-- **chore**: tarefas de manutenção (configuração, etc.)
+- **feat**: new feature or exercise
+- **fix**: bug or error fix
+- **docs**: documentation (README, comments, study notes)
+- **style**: formatting, code organization
+- **refactor**: refactoring without changing functionality
+- **test**: add or fix tests
+- **chore**: maintenance tasks (configuration, etc.)
 
-### Escopos Comuns
+### Common Scopes
 
-- **estoque**: sistema de controle de estoque
-- **cpf**: gerador/verificador de CPF
-- **calculadora**: aplicação calculadora
-- **jogo**: jogo da palavra secreta
-- **lista**: exercícios com listas
-- **estudos**: notas de estudo
-- **notas**: arquivos na pasta notasEstudo/
-
-### Exemplos
-
-```
-feat(estoque): adicionar validação de produtos duplicados
-fix(cpf): corrigir algoritmo de verificação do segundo dígito
-docs(notas): adicionar exemplos de uso de sets
-style(calculadora): melhorar formatação da interface
-refactor(lista): simplificar lógica de validação de entrada
-```
-
-### Mensagens em Ingles
-
-- Use Ingles para descrições
-- Seja claro e direto sobre o que foi alterado
-- Foque no **o quê** e **por quê**, não no **como**
+- **estoque**: inventory control system
+- **cpf**: CPF generator/validator
+- **calculadora**: calculator application
+- **jogo**: secret word game
+- **lista**: list exercises
+- **estudos**: study notes
+- **notas**: files in the notasEstudo/ folder
