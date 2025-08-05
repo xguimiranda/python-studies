@@ -1,51 +1,104 @@
-# Sets - Conjuntos em Python (tipo set)
-# Conjuntos são ensinados na matemática
-# https://brasilescola.uol.com.br/matematica/conjunto.htm
-# Representados graficamente pelo diagrama de Venn
-# Sets em Python são mutáveis, porém aceitam apenas
-# tipos imutáveis como valor interno.
+# Sets (Conjuntos) em Python - Guia Fácil
+# ---------------------------------------
+# Sets são coleções de elementos únicos, sem ordem e sem índices.
+# Muito usados para eliminar duplicados e fazer operações matemáticas de conjuntos.
 
-# Criando um set
-# set(iterável) ou {1, 2, 3}
-s1 = set('Luiz')
-s1 = set()  # vazio
-s1 = {'Luiz', 1, 2, 3}  # com dados
+# Como criar um set:
+# - Usando set(iterável)
+# - Usando chaves {elementos}
+s1 = set('Luiz')         # {'L', 'u', 'i', 'z'}
+s2 = set()               # set vazio
+s3 = {'Luiz', 1, 2, 3}   # set com vários tipos imutáveis
 
-# Sets são eficientes para remover valores duplicados
-# de iteráveis.
-# - Seus valores serão sempre únicos;
-# - Não aceitam valores mutáveis;
-# - não tem índexes;
-# - não garantem ordem;
-# - são iteráveis (for, in, not in)
-l1 = [1, 2, 3, 3, 3, 3, 3, 1]
-s1 = set(l1)
-l2 = list(s1)
+# Principais características dos sets:
+# - Não aceita elementos duplicados
+# - Não garante ordem dos elementos
+# - Não tem índices (não dá para acessar por posição)
+# - Aceita apenas tipos imutáveis (str, int, float, tuple)
+# - É iterável (pode usar for, in, not in)
+
+# Exemplo: Remover duplicados de uma lista
+lista = [1, 2, 2, 3, 3, 3, 1]
+set_sem_duplicados = set(lista)   # {1, 2, 3}
+print(set_sem_duplicados)
+
+# Convertendo set para lista (se quiser acessar por índice)
+lista_unica = list(set_sem_duplicados)
+print(lista_unica)
+
+# Verificando se um elemento está no set
+print(3 in set_sem_duplicados)    # True
+print(4 not in set_sem_duplicados) # True
+
+# Iterando sobre um set
+for elemento in set_sem_duplicados:
+    print(elemento)
+
+# Métodos principais dos sets:
+s = set()
+s.add('Python')                  # Adiciona um elemento
+s.add(42)
+s.update([1, 2, 3])              # Adiciona vários elementos (iterável)
+print(s)
+s.discard('Python')              # Remove o elemento se existir (não dá erro)
+print(s)
+s.clear()                        # Remove todos os elementos
+print(s)
+
+# Operações matemáticas com sets:
+a = {1, 2, 3}
+b = {2, 3, 4}
+
+# União: todos os elementos dos dois sets
+print('União:', a | b)           # {1, 2, 3, 4}
+
+# Interseção: elementos presentes nos dois sets
+print('Interseção:', a & b)      # {2, 3}
+
+# Diferença: elementos só no primeiro set
+print('Diferença:', a - b)       # {1}
+
+# Diferença simétrica: elementos que estão em um ou outro, mas não nos dois
+print('Diferença simétrica:', a ^ b) # {1, 4}
+
+# Resumo rápido:
+# - Use sets para garantir elementos únicos
+# - Ideal para operações matemáticas de conjuntos
+# - Não serve para acessar por índice ou manter ordem
+
+# Dica: Se precisar de elementos únicos e ordem, use dict.fromkeys(lista) ou OrderedDict (Python 3.7+ mantém ordem em dict)
+
+# Métodos úteis adicionais:
 s1 = {1, 2, 3}
-print(3 not in s1)
-for numero in s1:
-    print(numero)
+s2 = {3, 4, 5}
 
-# Métodos úteis:
-# add, update, clear, discard
-s1 = set()
-s1.add('Luiz')
-s1.add(1)
-s1.update(('Olá mundo', 1, 2, 3, 4))
-# s1.clear()
-s1.discard('Olá mundo')
-s1.discard('Luiz')
-# print(s1)
+# Verificar se é subconjunto/superconjunto
+print(s1.issubset(s2))        # False - s1 está contido em s2?
+print(s1.issuperset(s2))      # False - s1 contém s2?
+print({1, 2}.issubset(s1))    # True
 
-# Operadores úteis:
-# união | união (union) - Une
-# intersecção & (intersection) - Itens presentes em ambos
-# diferença - Itens presentes apenas no set da esquerda
-# diferença simétrica ^ - Itens que não estão em ambos
-s1 = {1, 2, 3}
-s2 = {2, 3, 4}
-s3 = s1 | s2
-s3 = s1 & s2
-s3 = s2 - s1
-s3 = s1 ^ s2
-print(s3)
+# Verificar se são disjuntos (sem elementos em comum)
+print(s1.isdisjoint({6, 7}))  # True - não têm elementos em comum
+
+# Diferença usando método (equivale a -)
+print(s1.difference(s2))      # {1, 2}
+
+# Casos práticos úteis:
+# 1. Encontrar elementos únicos entre duas listas
+lista1 = [1, 2, 3, 4]
+lista2 = [3, 4, 5, 6]
+unicos_lista1 = set(lista1) - set(lista2)  # {1, 2}
+print(f"Elementos só na lista1: {unicos_lista1}")
+
+# 2. Verificar se duas listas têm elementos em comum
+tem_comum = bool(set(lista1) & set(lista2))  # True
+print(f"Listas têm elementos em comum: {tem_comum}")
+
+# 3. Remover duplicados mantendo tipo lista
+def remover_duplicados(lista):
+    return list(dict.fromkeys(lista))  # Mantém ordem (Python 3.7+)
+
+original = [1, 2, 2, 3, 1, 4]
+sem_dup = remover_duplicados(original)  # [1, 2, 3, 4]
+print(f"Original: {original}")
+print(f"Sem duplicados: {sem_dup}")
