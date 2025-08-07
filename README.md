@@ -1,6 +1,6 @@
 # 🐍 Python Studies & Practice Repository
 
-This repository is a personal collection of Python studies, practice exercises, and small projects. It serves as a space for experimenting with language features, algorithms, data structures, and coding patterns. All scripts are standalone and use only the Python standard library.
+This repository is a personal collection of Python studies, practice exercises, and small projects. It serves as a space for experimenting with language features, algorithms, data structures, and coding patterns. All scripts are standalone and use only the Python standard library. 
  
 ---
 
