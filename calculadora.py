@@ -44,11 +44,10 @@ def calculadora():
             if resposta in ['s', 'sim']:
                 break
             elif resposta in ['n', 'nao', 'não']:
-                print("Obrigado por usar a calculadora!")
+                print("Obrigado por usar a calculadora")
                 return
             else:
                 print("Por favor, digite 's' para sim ou 'n' para não.")
 
 if __name__ == "__main__":
     calculadora()
-    jiandijan
