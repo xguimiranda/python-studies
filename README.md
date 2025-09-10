@@ -1,40 +1,28 @@
-# 🐍 Python Studies & Practice Repository
+# 🐍 Python Studies
 
-This repository is a personal collection of Python studies, practice exercises, and small projects. It serves as a space for experimenting with language features, algorithms, data structures, and coding patterns. All scripts are standalone and use only the Python standard library. 
-  
----
+Bem-vindo ao meu repositório de estudos de Python! 🚀
 
-## 📚 Repository Overview
+Aqui você encontra vários exercícios, scripts e anotações que estou usando para aprender e praticar programação em Python. O objetivo é explorar conceitos básicos e intermediários, como:
 
-- ✅ Python Fundamentals (syntax, variables, data types)
-- 🔄 Control Flow (if, for, while)
-- 🧮 Functions
-- 📦 Collections (lists, tuples, dictionaries, sets)
-- 📝 String Manipulation
-- 📂 File Handling
-- ⚠️ Exception Handling
-- 🧑‍💻 Object-Oriented Programming (OOP)
-- 🗃️ Modules & Packages
-- 🧠 Intermediate & Advanced Topics (decorators, generators, comprehensions)
-- 🛠️ Real-World Projects 
-- 🏋️‍♂️ Practice Exercises
+- 📚 **Funções, listas, dicionários e estruturas de controle**
+- 🧮 **Pequenos projetos e desafios** (calculadora, jogo da palavra secreta, verificador de CPF, etc)
+- 📊 **Visualização de dados** (gráficos simples)
+- 📝 **Notas de estudo e exemplos práticos**
 
 ---
 
-## 🌟 Key Features
+## ⚡ Como usar
 
-- 📝 Well-structured notes with examples
-- 🎯 Practice exercises for each topic
-- 📁 Real-world projects to solidify learning
-- 💡 Helpful tips and tricks from the course
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/xguimiranda/python-studies.git
+   ```
+2. Explore os arquivos `.py` e os notebooks para ver exemplos e testar os códigos.
 
----
 
-## 🤝 Contributions
 
-Feel free to fork this repository and contribute with improvements, fixes, or your own solutions!
-If you find it helpful, star ⭐ and share! 🥳
+## 👤 Sobre mim
 
----
+Meu nome é Guilherme Miranda e este repositório é parte do meu aprendizado contínuo em Python.
 
-Happy coding! 🚀🐍
+Sinta-se à vontade para explorar, sugerir melhorias ou usar os exemplos para estudar também! 😄
