@@ -79,7 +79,7 @@ lista_grande = [x**2 for x in range(1000000)]  # Usa muita memória!
 gen_grande = (x**2 for x in range(1000000))     # Usa pouca memória!
 
 print(f"\nMemória - Lista: ~{lista_grande.__sizeof__()} bytes")
-print(f"Memória - Generator: ~{gen_grande.gi_frame.__sizeof__()} bytes")
+# print(f"Memória - Generator: ~{gen_grande.gi_frame.__sizeof__()} bytes")
 
 # EXEMPLOS PRÁTICOS MUITO ÚTEIS:
 

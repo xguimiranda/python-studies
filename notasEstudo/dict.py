@@ -27,7 +27,7 @@ print('Nome:', pessoa.get('nome', 'Não existe'))  # Luiz
 print('Idade:', pessoa.get('idade', 'Não existe'))  # Não existe
 
 # 6. setdefault(chave, valor) - Adiciona chave com valor se não existir
-pessoa.setdefault('idade', 30)
+# pessoa.setdefault('idade', 30)
 print('Com idade:', pessoa)  # {'nome': 'Luiz', 'sobrenome': 'Miranda', 'idade': 30}
 
 # 7. copy() - Cria uma cópia rasa do dicionário
@@ -46,12 +46,12 @@ print('Após popitem:', pessoa)
 
 # 10. update() - Atualiza o dicionário com outro dicionário, lista de pares ou argumentos nomeados
 # Usando outro dicionário:
-pessoa.update({'nome': 'Ana', 'idade': 25})
+# pessoa.update({'nome': 'Ana', 'idade': 25})
 print('Atualizado com dict:', pessoa)
 
 # Usando lista de listas (par chave/valor):
 lista_pares = [['nome', 'Carlos'], ['sobrenome', 'Silva']]
-pessoa.update(lista_pares)
+# pessoa.update(lista_pares)
 print('Atualizado com lista:', pessoa)
 
 # Usando argumentos nomeados:
